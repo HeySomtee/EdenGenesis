@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+body
+{
+    margin: 0%;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: 'Kaushan Script', cursive;
+    background-color: rgb(23, 71, 38);
+    /* background-image: url('https://media.istockphoto.com/id/892043040/photo/black-stone-background.jpg?b=1&s=170667a&w=0&k=20&c=MAYYAxR94r0D6eFtg1lXGBPjJ3Z57M-s87Xvpfm5T54='); */
+}
+
+.background-image
+{
+    z-index: -1;
+    position: absolute;
+}
+
+.background-image img
+{
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.two
+{
+    display: none;
+}
+
+.tweetBird img
+{
+    width: 20%;
+    margin-top: 20%;
+}
+
+.avatar
+{
+    margin-left: 10%;
+
+}
+
+.avatar img
+{
+    margin-top: -10%;
+    width: 80%;
+}
+
+.grid{
+   
+    display: grid;
+    place-content: center;
+}
+
+#logo img
+{
+    width: 10%;
+    float: right;
+    margin-top: -3%;
+}
+
+#mage
+{
+    position: absolute;
+    float: right;
+    margin-left: 15vw;
+    opacity: 0.8;
+}
+
+.nav-bar
+{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 50%;
+    height: 10%;
+    margin-top: -10%;
+    animation: navi 2s 2s forwards;
+    /* background-color: rgb(192, 219, 229); */
+    background: linear-gradient(to bottom, #1e528ec9 0%,#728a7cd3 50%,#e9cd5dde 100%);
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+}
+
+.nav-bar1
+{
+    display: none;
+}
+
+#grid2
+{
+    display: none;
+}
+
+@keyframes navi
+{
+    0%
+    {
+        margin-top: -10%;
+    }
+
+    100%
+    {
+        margin-top: 0%;
+    }
+}
+
+
+
+li
+{
+    float: left;
+    font-size: larger;
+}
+
+.title
+{
+    float: right;
+    font-size: 200%;
+    margin-right: 10%;
+    margin-top: 10%;
+    transform: rotate(-5deg);
+     text-shadow: -1px 10px 0 gold,
+                          1px 1px 0 gold,
+                         1px -1px 0 gold,
+                        -1px -1px 0 gold;
+    
+}
+
+.top-title
+{
+    font-size: 370%;
+}
+
+.bottom-title
+{
+    font-size: 300%;
+    margin-top: -30%;
+}
+
+#holder
+{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    margin-top: -101vh;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+    
+    background: rgba(202, 229, 77, 0.68);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.4px);
+    -webkit-backdrop-filter: blur(6.4px);
+    border: 1px solid rgba(202, 229, 77, 0.66);
+}
+
+@keyframes dragDown
+{
+    0%
+    {
+        margin-top: -101vh;
+    }
+
+    100%
+    {
+        margin-top: 0vh;
+    }
+}
+
+@keyframes pushUp
+{
+    0%
+    {
+        margin-top: 0vh;
+    }
+
+    100%
+    {    
+        margin-top: -101vh;
+    }
+}
+
+.topic
+{
+    display: flex;
+    justify-content: center;
+    color: goldenrod;
+}
+
+#about, #founders, #roadmap
+{
+    font-size: larger;
+}
+
+/* #aboutt
+{
+    display: none;
+} */
+
+#aboutt, #team, #plan
+{
+    display: none;
+}
+
+#close
+{
+    font-size: xx-large;
+    color: red;
+    margin-left: 2%;
+}
+
+li:hover
+{
+    color: #fff;
+}
+
+#socials
+{
+    margin-left: 50vw;
+    position: absolute;
+    /* margin-top: 30%; */
+    font-size: xx-large;
+}
+
+#f_img img
+{
+    border-radius: 50%;
+    width: 20%;
+}
+
+.fa-brands
+{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.fa-twitter
+{
+    color:  #00aced;
+}
+
+.fa-discord
+{
+    color: blueviolet;
+}
+
+#rmp-wrapper
+{
+    display: flex;
+    justify-content: center;    
+}
+
+#rmp
+{
+    font-size: 50px;
+    animation: blink 0.6s infinite alternate-reverse;
+}
+
+@keyframes blink
+{
+    100%
+    {
+        opacity: 0.1;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+   body, *{
+    overflow: none;
+    box-sizing: border-box;
+   }
+   
+    #holder
+    {
+        /* display: none; */
+        width: 100vw;
+        height: 100vh;
+        /* margin-top: -100.5vh; */
+        font-size: small;
+    }
+
+    .title
+    {
+        /* position: absolute; */
+        margin-top: 17%;
+        font-size: 150%;
+        display: grid;
+        place-items: center;
+        /* left: 50%; */
+        /* position: absolute;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); */
+        transform: rotate(-5deg);
+    }
+
+    #f_img img
+{
+    /* display: block; */
+    border-radius: 50%;
+    width: 30%;
+}
+
+    .tweetBird
+    {
+        display: none;
+    }
+
+    .fa-brands
+    {
+        background-color: transparent;
+    }
+
+    .nav-bar
+    {
+        display: none;
+    }
+
+    .nav-bar1
+    {
+        display: block;
+        /* display: absolute; */
+        
+       
+    }
+
+    #grid2
+    {
+        display: block;
+        float: right;
+        margin-top: 2%;
+        margin-right: 3%;
+    }
+  
+    .nav-bar1
+    {
+        display: none;
+        
+    }
+
+    #mage
+    {
+        /* position: absolute; */
+        margin-left: 50vw;
+        width: 70%;
+    }
+    
+
+    .nav-bar1 div:hover
+    {
+        color: #00aced;
+    }
+
+    #rmp
+    {
+        min-width: 80vw;
+        font-size: 25px;
+    }
+
+    .rmp-img
+    {
+        width: 350%;
+        margin-top: 12vh;
+        margin-left: -60vw;
+    }
+
+    .two{
+        display: block;
+    }
+
+    .one
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 660px){
+    #mage
+    {
+        /* position: absolute; */
+        margin-left: 50vw;
+        width: 50%;
+    }
+}
+
+
+@media only screen and (max-width: 530px) 
+{
+    #f_img
+    {
+        margin-top: -5%;
+        display: grid;
+        place-items: center;
+    }
+    #f_img img
+    {
+        display: block;
+        border-radius: 50%;
+        width: 20%;
+    }
+
+    #mage
+    {
+        /* position: absolute; */
+        margin-left: 90vw;
+        width: 30%;
+    }
+    
+}
+
+@media only screen and (max-width: 400px) 
+{
+    .title{
+        font-size: 130%;
+        margin-top: 30%;
+
+    }
+
+    #mage
+    {
+        /* position: absolute; */
+        margin-left: 100vw;
+        width: 40%;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .title{
+        /* font-size: 130%; */
+        margin-top: 27%;
+
+    }
+
+    #mage
+    {
+        /* position: absolute; */
+        margin-left: 60vw;
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 355px) {
+    .title{
+        font-size: 100%;
+        margin-top: 35%;
+
+    }
+}
+
+@media only screen and (max-width: 270px) {
+    .title{
+        font-size: 80%;
+        margin-top: 45%;
+
+    }
+}
